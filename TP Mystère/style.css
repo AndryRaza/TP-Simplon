@@ -1,0 +1,54 @@
+table{
+    border-collapse:collapse;
+    text-align:center;
+}
+
+
+td,tr,th{
+    border:1px solid black;
+}
+
+#nul {
+    border:1px solid white;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#nul_foot{
+    
+    border:1px solid white;
+    border-right: 1px solid black;
+ 
+}
+
+
+#nom{
+    border-right:1px solid white;
+}
+
+#end{
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.banniere{
+    display:flex;
+    
+}
+
+.txt{
+    display:flex;
+    font-size: 20px;
+}
+
+.contenu{
+    display:flex; 
+    flex-wrap:nowrap;
+}
+
+.image{
+    display:flex;
+    max-height: 50%;
+    max-width: 50%;
+}
+
