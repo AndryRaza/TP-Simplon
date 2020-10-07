@@ -1,0 +1,40 @@
+.bloc{
+    display:flex;
+    width:1280px;
+    height:420px;
+    border:2px solid black;
+    background: url("images/voiture.png");
+}
+
+#avant{
+    display:flex;
+    position: absolute;
+    margin-top:177px;
+    margin-left:268px;
+    animation-delay: 0s;
+    animation-duration:250ms;
+    animation-name:roule;   
+    animation-iteration-count: infinite;
+
+}   
+
+
+#arriere{
+    display:flex;
+    position: absolute;
+    margin-top:177px;
+    margin-left:840px;
+    animation-delay: 0ms;
+    animation-duration:250ms;
+    animation-name:roule; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes roule {
+    0%   {rotate: 0deg;}
+    25%  {rotate: 90deg;}
+    50%  {rotate: 180deg;}
+    75%  {rotate: 270deg;}
+    100% {rotate: 360deg;}
+  }
+
