@@ -1,0 +1,17 @@
+#voir{
+    border:2px solid red;
+}
+
+#urgent{
+    background-color: red;
+}
+
+#normal{
+    background-color: blue;
+}
+
+tr td{
+    text-align: center;
+    
+}
+

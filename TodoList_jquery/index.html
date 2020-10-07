@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>TodoList</title>
+</head>
+
+<body>
+    <div class="row d-flex justify-content-center bg-secondary">
+        <h1>TodoList</h1>
+    </div>
+    <div class="container">
+
+        <!--Partie écran avec la liste des tâches -->
+        <section class=" ecran_liste mt-2 ">
+
+            <div class="row border border-info rounded" style="height:400px">
+                <table class="table">
+                    <header>
+                        <td>Urgence</td>
+                        <td>Tâche</td>
+                        <td>Date</td>
+                    </header>
+
+                    <tbody id="list_task">
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-center" id="pagination">
+                <button class="btn" name="btn_firstpage">|< </button>
+                        <button class="btn" name="btn_previous">
+                            << </button>
+                                <span class="mt-1" id="pageInfo">1</span>
+                                <button class="btn" name="btn_next">>></button>
+                                <button class="btn" name="btn_lastpage">>|</button>
+            </div>
+        </section>
+
+        <section class="ajouter_modifier d-flex ">
+            <!-- Première box-->
+            <div class="col-6 mt-2 w-100 border border-danger rounded " style="height: 200px;" >
+                <h4>Ajouter une tâche</h4>
+                <input class="mt-1 w-100" type="text" name="name_task" value="Entrez la tâche">
+
+                <div class="d-flex mt-3">
+                    <input class="w-100" type="checkbox" name="urgent"> Urgent
+                    <input class="ml-5 w-100" type="checkbox" name="normal"> Normal
+                </div>
+                <span class="add d-flex justify-content-center mt-3 mb-1">
+                    <button class="btn btn-primary " type="button" name="btn_add">Ajouter</button>
+                </span>
+            </div>
+
+            <!-- Deuxième box-->
+            <div class="col-6 mt-2 ml-1 w-100 border border-danger rounded"  >
+
+                <h4>Valider/ Modifier une tâche</h4>
+                <form>
+                    <select class="w-100" name="tache" size="1" id="task_deroulant">
+                    </select>
+                </form>
+                <div class="d-flex flex-fill w-100 mt-3">
+
+                    <input class="w-100" type="checkbox" name="urgent_maj"> Urgent
+                    <input class="ml-5 w-100" type="checkbox" name="normal_maj"> Normal
+                    <input class="ml-5 w-100" type="checkbox" name="done"> Terminée
+                </div>
+                <span class="maj d-flex justify-content-center mt-3 mb-1">
+                    <button class="btn btn-primary " type="button" name="btn_maj">Mettre à jour</button>
+                </span>
+
+            </div>
+
+        </section>
+
+    </div>
+    <footer class="mt-2  d-flex justify-content-center bg-dark text-white w-100 h-100">
+        Todolist entièrement faite avec du JQuery et Boostrap
+    </footer>
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</html>
