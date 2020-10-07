@@ -1,0 +1,34 @@
+#voir{
+    border:4px solid red;
+}
+
+#no_dots, #date_no_dots{
+    list-style-type: none;
+}
+
+#bande_1{
+    background-color: rgb(14, 14, 48);
+}
+
+#list_task{
+    
+    height:100%;
+}
+
+#urgente{
+    list-style-type: none;
+    height:100%;
+}
+#container_table {
+    margin-top: 5px;
+   
+}
+#list_task tr td { 
+    padding-right: 170px;
+    border : 2px solid green
+}
+
+
+#urgente{
+    background-color: red;
+}

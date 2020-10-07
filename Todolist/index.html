@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <div class="row d-flex " id="bandeau_home">
+
+        <div class="col-10 d-flex text-white" id="bande_1">
+            <p class="ml-5 mt-1">Home Page</p>
+        </div>
+        <div class="col-2 d-flex flex-row flex-nowrap">
+            <img src="assets/notification_logo.jpg" style="width:50px; height:50px">
+            <img src="assets/Alerte_logo.png" style="width:50px; height:50px">
+            <img src="assets/avatar.jpg" style="width:50px; height:50px;border : 2px solid black">
+            Razan Smith
+        </div>
+    </div>
+
+    <div class="row ">
+        <img src="assets/task_image.png" class="mt-2 ml-5">
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-4 d-flex flex-column align-items-center text-black">
+            <h3>Create your task</h3>
+            <img src="assets/Create_your_task.jpg" class="w-50 h-50">
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center text-black">
+            <h3>Task to do</h3>
+            <img src="assets/Task_to_do.jpg" class="w-50 h-75">
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center text-black">
+            <h3>Summary</h3>
+            <img src="assets/Summary.jpg" class="w-50 h-75">
+        </div>
+    </div>
+
+    <div class="row d-flex  justify-content-center mt-5 bg-secondary">
+
+        <div class="d-flex flex-column  mt-2 mb-2 border border-black bg-light " style="width:900px; height:600px">
+            <p>CREATE YOUR TASK</p>
+
+            <form name="ajout">
+                <input type="text" id="task">
+                <input type="checkbox" name="urgent"> urgent
+                <button type="button" style="width:70px" onclick="recup()"> Valider </button>
+            </form>
+
+
+            <div class="row bg-primary text-white  ml-0 w-100 justify-content-center mt-2">
+                <p> TO DO LIST</p>
+            </div>
+
+            <div class="d-flex flex-row">
+
+                <div class=" d-flex flex-column" style="width:400px; height:500px">
+
+
+                    <table class="table col-8" id="container_table">
+                        <header>
+                            <td>Statut</td>
+                            <td>Tâche</td>
+                            <td>Date</td>
+                            <td>Finie</td>
+                        </header>
+                        <tbody id="list_task">
+
+                        </tbody>
+
+                    </table>
+                    <div>
+                        <button class="btn" onclick="firstPage()">|<< /button>
+                                <button class="btn" onclick="previous()">
+                                    < </button>
+                                        <span id="pageInfo">1</span>
+                                        <button class="btn" onclick="nextPage()">></button>
+                                        <button class="btn" onclick="lastPage()">>|</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="test.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</html>
