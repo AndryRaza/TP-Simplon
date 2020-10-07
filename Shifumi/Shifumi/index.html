@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <title>Game</title>
+    <script src="script.js"></script>
+    <script src="donnee.json"></script>
+
+</head>
+
+<body onload="page_charge()">
+
+    <div class="corps">
+
+        <h1 color=white>SHIT FOURMI</h1>
+        <div class="pseudo">
+            <div>
+                <h1 id="pseudo_txt"> </h1>
+            </div>
+            <div id="pseudo_txt">
+                <h1>Computer</h1>
+            </div>
+
+        </div>
+        <div class="led">
+            <div class="led_1">
+                <div id="l11"></div>
+                <div id="l12"></div>
+                <div id="l13"></div>
+            </div>
+            <div class="led_2">
+                <div id="l21"></div>
+                <div id="l22"></div>
+                <div id="l23"></div>
+            </div>
+        </div>
+        <div class="jeux">
+            <div id="start"> <button type="button" value="Start" onclick="manche_suivante()">Lancer un round</button></div>
+            <div id="reset"><button type="button" value="Reset" onclick="reset()">RESET</button></div>
+            <div id="j1"></div>
+            <div id="compteur">
+                <p id="compteur_txt"></p>
+            </div>
+            <div id="j2"></div>
+        </div>
+        <h1>Choix du joueur :</h1> </br>
+        <div class="choix">
+            
+            <div class="pierre">
+                <button type="button" value="Pierre" onclick="button_pierre()"> 
+                </button>
+            </div>
+
+            <div class="feuille">
+                <button type="button" onclick="button_papier()"> 
+                </button>
+            </div>
+
+            <div class="ciseaux">
+                <button type="button" onclick="button_ciseaux()"> 
+                </button>
+            </div>
+        </div>
+
+        <div id="victoire">
+            Victoire(s) d'affilée(s) : 0
+        </div>
+
+        <div id="meilleur_score">
+            Meilleur score : 0
+        </div>
+
+
+    </div>
+
+    <style id="eclat_joueur">
+    </style>
+
+    <style id="eclat_ia">
+    </style>
+
+    <style id="back_win">
+    </style>
+
+</body>
+
+</html>

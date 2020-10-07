@@ -1,0 +1,220 @@
+body{
+    padding:auto;
+    background-color:black;
+    background-size: cover;
+    animation-delay: 0ms;
+    animation-duration:500ms;
+    animation-name:win; 
+    animation-iteration-count: infinite;
+}
+.corps{
+    display:flex;
+    flex-flow: column;
+    text-align: center;
+    margin:auto;
+    height:1200px;
+    width:700px;
+    border:2px solid white;
+    color:white;
+    align-items: center;
+}
+
+.pseudo{
+    display:flex;
+    flex-flow:row;
+    height:70px;
+    width:650px;  
+    border:2px solid white;
+}
+
+#pseudo_txt{
+    display:flex;
+    height:70px;
+    width:325px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    border:2px solid white;
+}
+
+.pseudo h1{
+    color:white;
+   
+}
+
+
+.led{
+    display:flex;
+    flex-flow:row;
+    height:70px;
+    width:650px;  
+    margin-top:30px;
+}
+
+.led_1,.led_2{
+    display:flex;
+    flex-flow: row;
+    height:70px;
+    width:325px;
+    align-items: center;
+   
+   
+}
+
+
+#l11, #l12, #l13{
+    display:flex;
+    margin-left:45px;
+    width: 50px;
+      height: 50px;
+      background: grey;
+      border-radius: 60%;
+      border-color:black;
+}
+
+#l21, #l22, #l23{
+    display:flex;
+    margin-left:45px;
+    width: 50px;
+      height: 50px;
+      background: rgb(94, 91, 91);
+      border-radius: 60%;
+      border-color:white;
+}
+
+.jeux{
+    display:flex;
+    margin-top:30px;
+    height: 450px;
+    width:650px;
+  
+    align-items: center;
+}
+
+#reset{
+    display:flex;
+    position: absolute;
+    align-self: flex-end;
+    height:50px;
+    width: 200px;
+    margin-left: 270px;
+}
+#start{
+    display:flex;
+    height:50px;
+    width: 200px;
+    border:2px solid white;
+    position: absolute;
+    align-self: flex-start;
+    margin-left: 210px;
+    margin-top:10px;
+}
+#start > button:nth-child(1)
+{
+    height:50px;
+    width: 200px;
+}
+#j1{
+    display:flex;
+    height:250px;
+    width:250px;
+    border:10px double white;
+    animation-delay: 0ms;
+    animation-duration:500ms;
+    animation-name:bordure1; 
+    animation-iteration-count: infinite;
+
+    margin-left:10px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size:250px 250px;
+}
+
+#j2{
+    display:flex;
+    height:250px;
+    width:250px;
+    border:10px double white;
+    animation-delay: 0ms;
+    animation-duration:500ms;
+    animation-name:bordure2; 
+    animation-iteration-count: infinite;
+    margin-left:10px;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size:250px 250px;
+
+}
+
+
+
+#compteur{
+    display:flex;
+    height:50px;
+    width:50px;
+    margin-left:10px;
+}
+
+#compteur p{
+    display:flex;
+    margin-top:5px;
+    margin-left:15px;
+    font-size:30px;
+}
+
+
+.choix{
+    display:flex;
+    margin-top:10px;
+    height:125px;
+    width:650px;
+  
+}
+
+
+
+.pierre, .feuille, .ciseaux{
+    display:flex;
+    margin-top:10px;
+    height:100px;
+    width:216.6px;
+    border:2px solid white;
+}
+
+.pierre p, .feuille p, .ciseaux p{
+    font-size: 30px;
+    margin-left:50px;
+}
+
+.pierre > button:nth-child(1){
+    
+    background:url(img/pierre.png);
+    background-size: 216.6px 100px;
+    width:216.6px;
+}
+
+.feuille > button:nth-child(1){
+    
+    background:url(img/feuille.png);
+    background-size: 216.6px 100px;
+    width:216.6px;
+}
+
+.ciseaux > button:nth-child(1){
+    background:url(img/ciseaux.png);
+    background-size: 216.6px 100px;
+    width:216.6px;
+}
+
+#victoire{
+    margin:auto;
+    color:white;
+    font-size:30px;
+}
+
+#meilleur_score{
+    margin:auto;
+    color:white;
+    font-size:30px;
+}
