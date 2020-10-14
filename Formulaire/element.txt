@@ -1,0 +1,24 @@
+Titre <h1>
+
+Eléments en colonne - centrés - bien alignés 
+Légend gris et dessous le input txt
+" " => noir 
+Submit en rouge texte blanc 
+
+Body Fond fondu bleu clair => bleu
+
+Une ligne "Name" avec deux input txt : First Name - Last Name en légende 
+
+Une ligne "Company"  avec un input txt
+
+Une ligne "Email" avec un input txt 
+
+Une ligne "Phone" avec deux input txt : Area code - Phone number en légende
+
+Une ligne "Subject" avec un menu déroulant "Choose option" 
+
+Une ligne "Are you an existing customer?" 
+
+Deux Checkbox rond : Yes No 
+
+Un bouton submit avec value = "Register" 

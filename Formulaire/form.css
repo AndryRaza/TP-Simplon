@@ -1,0 +1,96 @@
+body{
+    background: linear-gradient(rgb(89, 12, 231),rgb(67, 240, 202));
+    background-size:cover;
+}
+#voir{
+    
+}
+
+#container{
+    background-color: white;
+    margin:auto;
+    height:700px;
+    width: 500px;
+
+}
+
+#container div{
+    padding:20px;
+  }
+
+#titre{
+    font-size:10px;
+    color:white;
+    background-color:black;
+    height:50px;
+    text-align: center;
+}
+
+#formulaire{
+    display: flex;
+    flex-flow:row; 
+    padding:20px;
+}
+
+#label{
+    height:300px;
+    width: 100px;
+    margin-left:30px;
+    margin-top:20px;
+   
+
+    display:flex;
+    flex-flow: column ;
+}
+
+#label span{
+    margin-bottom: 45px;
+}
+
+#champ{
+    height:300px;
+    width: 290px;
+    margin-top:20px;
+    margin-left:10px;
+}
+
+#champ span{
+    display: flex;
+    flex-flow:row;
+    margin-bottom: 40px;
+}
+
+#first_name {
+    width:120px;
+    margin-right:10px;
+}
+#last_name {
+    width:120px;
+}
+
+#company, #email{
+    width: 260px;
+    height:26px;
+}
+
+#aria_code{
+    width:50px;
+    margin-right:10px;
+    height:26px;
+}
+
+#phone{
+    width: 195px;
+    height:26px;
+}
+
+#option{
+    width:272px;
+    height:26px;
+}
+
+input{
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(241, 239, 241);
+}
