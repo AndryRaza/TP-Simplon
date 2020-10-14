@@ -1,9 +1,6 @@
 body{
-    background: linear-gradient(rgb(89, 12, 231),rgb(67, 240, 202));
+    background: linear-gradient(rgb(116, 87, 247),	rgb(38, 150, 238));
     background-size:cover;
-}
-#voir{
-    
 }
 
 #container{
@@ -22,7 +19,7 @@ body{
     font-size:10px;
     color:white;
     background-color:black;
-    height:50px;
+    height:30px;
     text-align: center;
 }
 
@@ -36,7 +33,7 @@ body{
     height:300px;
     width: 100px;
     margin-left:30px;
-    margin-top:20px;
+    margin-top:35px;
    
 
     display:flex;
@@ -44,7 +41,7 @@ body{
 }
 
 #label span{
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 }
 
 #champ{
@@ -57,40 +54,72 @@ body{
 #champ span{
     display: flex;
     flex-flow:row;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
+}
+
+label{
+    font-size:12px;
+    color: rgb(217, 212, 210);
+}
+
+#aria_code_label{
+    font-size:10px;
+    color:  rgb(230, 230, 230)
 }
 
 #first_name {
     width:120px;
+    height:30px;
     margin-right:10px;
 }
 #last_name {
     width:120px;
+    height:30px;
 }
 
 #company, #email{
     width: 260px;
-    height:26px;
+    height:30px;
 }
 
 #aria_code{
-    width:50px;
+    width:60px;
     margin-right:10px;
-    height:26px;
+    height:30px;
 }
 
 #phone{
-    width: 195px;
-    height:26px;
+    width: 185px;
+    height:30px;
 }
-
+#label > span:nth-child(5){
+    margin-top:10px;
+}
 #option{
     width:272px;
-    height:26px;
+    height:37px;
+    background-color: rgb(230, 230, 230);
+    border:none;
+    border-radius: 5px;
 }
 
 input{
     border: 0px;
     border-radius: 5px;
-    background-color: rgb(241, 239, 241);
+    background-color: 	rgb(230, 230, 230);
+}
+
+#question{
+    margin-top:0px;
+    margin-left: 50px;
+}
+
+#register{
+    background-color:rgb(252, 78, 94);
+    border:none;
+    color:white;
+    height:35px;
+    width:120px;
+    border-radius: 5px;
+    margin-left:-25px;
 }
