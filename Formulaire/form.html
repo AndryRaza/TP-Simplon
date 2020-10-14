@@ -10,10 +10,7 @@
 
 <body>
     <div id="container">
-
-        
-            <h1>EVENT REGISTRATION FORM</h1>
-        
+        <h1>EVENT REGISTRATION FORM</h1>
 
         <div id="formulaire">
             <div id="label">
@@ -25,13 +22,12 @@
             </div>
 
             <div id="champ">
-
                 <span>
-                    <label><input type="text" name="first_name" id="first_name" >First name</label>
-                   
+                    <label><input type="text" name="first_name" id="first_name">First name</label>
+
                     <label><input type="text" name="last_name" id="last_name">Last name </label>
                 </span>
-                    
+
                 <span>
                     <input type="text" name="company" id="company">
                 </span>
@@ -41,25 +37,33 @@
                 </span>
 
                 <span>
-                   <label> <input type="phone" name="aria_code" id="aria_code"> Aria code </label>
-                   <label> <input type="phone" name="phone" id="phone">Phone number </label>
+                    <label> <input type="phone" name="aria_code" id="aria_code"> Aria code </label>
+                    <label> <input type="phone" name="phone" id="phone">Phone number </label>
                 </span>
-
                 <span>
                     <select name="option" id="option">
-                        <option> <p>Choose option</p></option>
+                        <option>
+                            <p>Choose option</p>
+                        </option>
                     </select>
                 </span>
-            </div>            
+            </div>
         </div>
+
         <div id="question">
             <p>Are you an existing customer?</p>
-            <input type="radio" checked="true"> Yes
-            <input type="radio"> No
-        <div>
-        <button type="button" id="register">REGISTER</button></div>
+            <div id="btn_radio">
+                <label><input type="radio" checked> Yes</label>
+
+                <label><input type="radio"> No</label>
+            </div>
+           
+                <button type="button" id="register">REGISTER</button>
+            
         </div>
+
     </div>
+
 </body>
 
 </html>
