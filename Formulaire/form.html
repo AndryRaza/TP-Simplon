@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
     <title>Formulaire</title>
 </head>
 
@@ -22,44 +26,46 @@
             </div>
 
             <div id="champ">
-                <span>
-                    <label><input type="text" name="first_name" id="first_name">First name</label>
+                <form name="registration">
+                    <span>
+                        <label for="first_name"><input type="text" name="first_name" id="first_name" required pattern="[A-Z][a-z]+">First
+                            name</label>
+                        <label for="last_name"><input type="text" name="last_name" id="last_name" required pattern="[A-Z][a-z]+">Last name
+                        </label>
+                    </span>
 
-                    <label><input type="text" name="last_name" id="last_name">Last name </label>
-                </span>
+                    <span>
+                        <input type="text" name="company" id="company" required>
+                    </span>
 
-                <span>
-                    <input type="text" name="company" id="company">
-                </span>
+                    <span>
+                        <input type="email" name="email" id="email" required>
+                    </span>
 
-                <span>
-                    <input type="email" name="email" id="email">
-                </span>
-
-                <span>
-                    <label> <input type="phone" name="aria_code" id="aria_code"> Aria code </label>
-                    <label> <input type="phone" name="phone" id="phone">Phone number </label>
-                </span>
-                <span>
-                    <select name="option" id="option">
-                        <option>
-                            <p>Choose option</p>
-                        </option>
-                    </select>
-                </span>
+                    <span>
+                        <label for="aria_code"> <input type="phone" name="aria_code" id="aria_code" required pattern="[+][0-9]{3}"> Aria code </label>
+                        <label for="phone"> <input type="phone" name="phone" id="phone" required pattern=[0-9]{6}>Phone number </label>
+                    </span>
+                    <span>
+                        <select name="option" id="option">
+                            <option>
+                                <p>Choose option</p>
+                            </option>
+                        </select>
+                    </span>
             </div>
         </div>
 
         <div id="question">
             <p>Are you an existing customer?</p>
             <div id="btn_radio">
-                <label><input type="radio" checked> Yes</label>
+                <label for="radio_yes"><input type="radio" id="radio_yes" checked> Yes</label>
 
-                <label><input type="radio"> No</label>
+                <label for="radio_no"><input type="radio" id="radio_no"> No</label>
             </div>
-           
-                <button type="button" id="register">REGISTER</button>
-            
+
+            <button type="submit" id="register">REGISTER</button>
+            </form>
         </div>
 
     </div>

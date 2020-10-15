@@ -96,8 +96,17 @@ label{
     height:40px;
     margin-right:10px;
 }
+/*
+input[type="text"]:invalid{
+    box-shadow: 0 0 5px 1px red;
+}
+
+input[type="text"]:valid{
+    border:none;
+}
+*/
 #last_name {
-    width:225px;
+    width:222px;
     height:40px;
 }
 
@@ -133,7 +142,7 @@ label{
 
 #option{
    padding-left:10px;
-    width:480px;
+    width:483px;
     height:45px;
     background-color: rgb(230, 230, 230);
     border:none;
@@ -171,8 +180,6 @@ input{
 #question label{
     color:black;
 }
-
-
 
 input[type='radio']:after {
     width: 15px;
