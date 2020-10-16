@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Formulaire</title>
 </head>
 
 <body>
-    <div class="container">
+    <form class="container">
         <h1>EVENT REGISTRATION FORM</h1>
-
+        
         <div id="ligne_name">
             <label>Name</label>
-            <label for="first_name"><input type="text" name="first_name" id="first_name"> First name</label>
+            <label for="first_name"><input type="text" name="first_name" id="first_name" required pattern="[A-Za-z]+">
+                First name</label>
 
             <label for="last_name"><input type="text" name="last_name" id="last_name">Last name</label>
 
@@ -22,18 +26,22 @@
 
         <div id="ligne">
             <label for="company">Company</label>
-            <input type="text" name="company" id="company">
+            <input type="text" name="company" id="company" required pattern="[A-Za-z]+">
+
         </div>
 
         <div id="ligne">
+
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
+
         </div>
 
         <div id="ligne_phone">
             <label>Phone</label>
-            <label for="aria_code"><input type="phone" name="aria_code" id="aria_code">Aria Code</label>
-            <label for="phone"><input type="phone" name="phone" id="phone">Phone Number</label>
+            <label for="aria_code"><input type="phone" name="aria_code" id="aria_code" required
+                pattern="[+][0-9]{4}">Aria Code</label>
+            <label for="phone"><input type="phone" name="phone" id="phone" required pattern=[0-9]{6}>Phone Number</label>
         </div>
 
         <div id="ligne">
@@ -49,10 +57,10 @@
             <label for="radio_no"><input type="radio" id="radio_no">No</label>
             <br>
             <button type="submit" id="register">REGISTER</button>
-            </form>
+
         </div>
 
-    </div>
+    </form>
 </body>
 
 </html>

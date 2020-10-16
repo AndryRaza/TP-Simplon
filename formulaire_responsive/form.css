@@ -10,6 +10,9 @@ body{
     padding:0;
 }
 
+label,p{
+    font-weight: bolder;
+}
 .container{
     margin-top:2%;
     margin-left:auto;
@@ -180,22 +183,23 @@ input[type='radio']:checked:after {
 
 /* Partie Smartphone */ 
 
-@media all and (max-width: 480px){
+@media all and (max-width: 490px){
+    html{
+        height:auto;
+        width: auto;
+    }
     body{
         height:100%;
-        width:90%;
-        margin:0%;
-        padding:0%;
-        background-size:cover;
+        width:80%;
     }
     h1{
         height:100%;
+        width: 100%;
     }
     .container{
-       
         width:90%;
-        margin-left:10%;
-        
+        margin-left:17%;
+        margin-bottom: 10%;
     }
 
     #ligne{
@@ -229,7 +233,7 @@ input[type='radio']:checked:after {
         flex-direction: column;
     }
      #ligne_phone >label:nth-child(2){
-        width:20.5%;
+        width:21.5%;
         margin-left:0%;
         margin-top:5%;
      }
@@ -245,7 +249,10 @@ input[type='radio']:checked:after {
 
       #question{
         width:75%;
-      
         padding-left: 7%;
+    }
+
+    #register{
+        width:50%;
     }
 }
