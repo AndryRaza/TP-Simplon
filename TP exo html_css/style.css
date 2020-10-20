@@ -222,7 +222,6 @@ footer #tweet, #mes_photos, #mes_amis{
 #photos img{
     width:40%;
     border:1px solid black;
-   
 }
 
 #mes_amis{
@@ -283,7 +282,10 @@ footer #tweet, #mes_photos, #mes_amis{
     article p{
      margin-left: 30px ;
     }
-
+    #photo_profil{
+        width:30%;
+        
+    }
     #logo{
         justify-content: center;
     }
@@ -294,5 +296,13 @@ footer #tweet, #mes_photos, #mes_amis{
 
     #tweet{
         text-align: center;
+    }
+
+    #photos img{
+        width:15%;
+    }
+
+    #photos{
+        justify-content: center;
     }
 }
