@@ -153,6 +153,7 @@ article{
 
 #titre_article{
     display: flex;
+    
 }
 
 #titre_article img{
@@ -249,4 +250,49 @@ footer #tweet, #mes_photos, #mes_amis{
 #mes_amis a{
     text-decoration: none;
     color: #760001;
+}
+
+/*****************/
+
+@media all and (max-width:1024px){
+    #container{
+        width:auto;
+    }
+
+    header{
+        display:flex;
+        flex-direction:column;
+    }
+    #titre{
+        margin:auto;
+    }
+
+    nav{
+        margin:auto;
+    }
+
+    #banniere{
+        display:none;
+    }
+
+    section{
+        display:flex;
+        flex-direction: column;
+    }
+
+    article p{
+     margin-left: 30px ;
+    }
+
+    #logo{
+        justify-content: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tweet{
+        text-align: center;
+    }
 }
