@@ -1,0 +1,21 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+#container{
+    height: 400px;
+    width:400px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border:2px solid blue;
+}
+    
+#container img{
+    border:2px solid red;
+    width:20%;
+    height:20%;
+}
+
