@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
 
-  
 
+    <div class="box" data-anijs="if: mouseover, do: rubberBand animated, after: fadeOutDownBig animated">
 
+    </div>
 
+    <div class="box2" data-anijs="if: click,  do: hinge animated, to :.box">
+
+    </div>
 </body>
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+
+<!-- Include to use $addClass, $toggleClass or $removeClass -->
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
 
 </html>
