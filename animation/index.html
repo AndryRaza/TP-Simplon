@@ -7,25 +7,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 
-    <script src="script.js"></script>
+    
 
     <title>Document</title>
 </head>
 
 <body>
 
-
+    <!--Anijs
     <div class="box" data-anijs="if: mouseover, do: rubberBand animated, after: fadeOutDownBig animated">
-
     </div>
 
     <div class="box2" data-anijs="if: click,  do: hinge animated, to :.box">
-
     </div>
+    -->
+
+    <div class="canvas-interactive-wrapper">
+        <canvas id="canvas-interactive"></canvas>
+        <div class="cta-wrapper">
+            <a href="#default-state" id="default-state-cta" class="active">Default state</a>
+            <a href="#violet-state" id="violet-state-cta">Violet state</a>
+            <a href="#orange-state" id="orange-state-cta">Orange state</a>
+        </div>
+    </div>
+
 </body>
 <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
 
 <!-- Include to use $addClass, $toggleClass or $removeClass -->
 <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+<script src="script.js"></script>
+<script src="granim.js-2.0.0/dist/granim.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </html>
