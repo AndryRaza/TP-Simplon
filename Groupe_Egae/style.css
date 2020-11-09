@@ -1,0 +1,98 @@
+/**** Les différentes colonnes ****/
+#groupe_egae, #approche_egae, #solutions{
+  height:725px;
+  background : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  text-align: center;
+}
+
+.bloc_txt{
+  position: absolute;
+  transition: all ease-in 0.8s;
+  top:35%;
+}
+
+#groupe_egae p, #approche_egae p, #solutions p{
+  width:85%;
+  align-self: center;
+  font-style: italic;
+  margin:auto;
+}
+
+#groupe_egae{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/image\ colonne1.jpg');
+  background-size: cover;
+}
+
+#approche_egae{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('img/image-1-egae-1000x1800.jpg');
+  background-size: cover;
+}
+
+#solutions{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/Asite_couv21.jpg');
+  background-size:cover;
+}
+
+.barre{
+ 
+  display: block;
+  width: 22px;
+  height: 5px;
+  background: #fff;
+  transition: all 1s;
+}
+/**** Hover bloc****/ 
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#hover_groupe_egae ul li a, #hover_approche_egae ul li a, #hover_solutions ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+#hover_groupe_egae, #hover_approche_egae, #hover_solutions{
+  bottom:0px;
+  position: absolute;
+  margin-left: 15%;
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+
+
+/**** Evènement quand hover ****/
+
+#groupe_egae:hover #hover_groupe_egae, #approche_egae:hover #hover_approche_egae, #solutions:hover #hover_solutions{
+  bottom:30px;
+  opacity: 1;
+}
+
+#groupe_egae:hover .barre, #approche_egae:hover .barre, #solutions:hover .barre{
+  height: 3px;
+  width: 80px;
+}
+
+#groupe_egae:hover .bloc_txt,#approche_egae:hover .bloc_txt, #solutions:hover .bloc_txt{
+  top:31%;
+}
+
+/**** Media queries ****/
+
+@media all and (max-width:490px){
+  #groupe_egae, #approche_egae, #solutions{
+    height:310px;
+  }
+
+  #groupe_egae:hover .bloc_txt,#approche_egae:hover .bloc_txt, #solutions:hover .bloc_txt{
+    opacity: 0;
+  }
+  
+  #hover_groupe_egae , #hover_approche_egae , #hover_solutions {
+    margin-left: 19%;
+  }
+
+}
